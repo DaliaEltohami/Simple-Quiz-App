@@ -1,3 +1,10 @@
+//  in this module we accept the user inputs for question settings
+// then we manipulate these inputs and make required validations
+// then we form the URL of the API call
+// make the API call and using asyn await and fetch
+// use .then to chain the api call with the starting of the app
+// make an instance of th quiz class to start the quiz app and send the questions, total number of questions, and quizDom
+
 //https://opentdb.com/api.php?amount=10&category=9&difficulty=easy
 
 import Quiz from "./quiz.js";
@@ -26,10 +33,12 @@ class Settings {
     const difficulty = this.getDifficulty();
     if (category && number && difficulty) {
       const url = `https://opentdb.com/api.php?amount=${number}&category=${category}&difficulty=${difficulty}`;
-      this.fetchQuestions(url).then((questions) => {
-        console.log(questions);
-        this.startQuizApp(questions, number);
-      });
+      this.fetchQuestions(url)
+        .then((questions) => {
+          console.log(questions);
+          this.startQuizApp(questions, number);
+        })
+        .catch((err) => console.log(err));
     }
   }
 

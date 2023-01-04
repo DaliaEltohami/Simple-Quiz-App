@@ -1,3 +1,13 @@
+// 1) get the needed dom elements 
+// 2) make an array of question instances with the questions parameter
+// 3) set current question 
+// 4) render the first question
+// 5) handel the next button click event
+// 6) handel question answer
+// 7) instantiate the final class if we reach the final question 
+// 8) count correct answers and send it to the final instant with the total number of questions
+
+
 import final from "./final.js";
 import question from "./question.js";
 

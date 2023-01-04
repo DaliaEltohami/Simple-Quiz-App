@@ -1,3 +1,8 @@
+// select required dom elements and set the properties 
+// handel try again button event by reloading the page
+// render the final div
+
+
 class final {
   constructor(correctAnswers, totalAnswers) {
     this.correctAnswersDom = document.querySelector(".correct-answers");

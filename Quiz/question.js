@@ -1,21 +1,8 @@
-// category
-// :
-// "General Knowledge"
-// correct_answer
-// :
-// "A flag"
-// difficulty
-// :
-// "medium"
-// incorrect_answers
-// :
-// (3) ['A rope', 'A window', 'A type of food']
-// question
-// :
-// "What is a Burgee?"
-// type
-// :
-// "multiple"
+// handel individual question
+// select the required dom elements
+// set the required properties
+// render the question
+// correct the answer
 
 class question {
   constructor(question) {
