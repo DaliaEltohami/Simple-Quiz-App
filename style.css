@@ -1,0 +1,81 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/* General Styles */
+
+.capitalized {
+  text-transform: capitalize;
+}
+
+fieldset {
+  border: none;
+  margin: 10px 0;
+}
+
+.btn {
+  width: 100px;
+  height: 40px;
+  padding: 10px;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+/* Final Style */
+
+.final{
+  display: none;
+  width: 600px;
+  height: auto;
+  /* text-align: center; */
+  padding: 20px;
+}
+
+.final-header{
+  margin-bottom: 20px;
+}
+
+/* Questions Style */
+
+.questions {
+  display: none;
+  width: 600px;
+  height: auto;
+  /* text-align: center; */
+  padding: 20px;
+}
+.start {
+}
+
+.questions-header {
+  margin: 20px 0;
+}
+
+/* Settings form Style*/
+
+.form-title {
+  margin-bottom: 10px;
+}
+
+.settings-form {
+  width: 600px;
+  height: auto;
+  /* text-align: center; */
+  padding: 20px;
+}
+
+option:nth-child(1) {
+  color: red;
+}
